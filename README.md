@@ -21,13 +21,15 @@ some handy tools.
     >                           indent between levels
 
 #####Example:
-    > > lua-5.2.3  ftree -l -r bin include
-    > @ bin
-    >     (0)->  -rwxr-xr-x   187K 2014-11-18 11:08:46  *lua
-    >     (0)->  -rwxr-xr-x   130K 2014-11-18 11:08:46  *luac
-    > @ include
-    >     (0)->  -rw-r--r--     7K 2014-11-18 11:08:46  lauxlib.h
-    >     (0)->  -rw-r--r--    13K 2014-11-18 11:08:46  lua.h
-    >     (0)->  -rw-r--r--   191B 2014-11-18 11:08:46  lua.hpp
-    >     (0)->  -rw-r--r--    15K 2014-11-18 11:08:46  luaconf.h
-    >     (0)->  -rw-r--r--     1K 2014-11-18 11:08:46  lualib.h
+    > > ftree -l -r lua-5.2.3
+    > (0)->  drwxr-xr-x   136B 2014-11-18 11:08:46  lib/
+    >   (1)->  -rw-r--r--   324K 2014-11-18 11:08:46  liblua.a
+    >   (1)->  drwxr-xr-x   102B 2014-11-18 11:08:46  lua/
+    >       (2)->  drwxr-xr-x    68B 2014-11-18 11:08:46  5.2/
+    > (0)->  drwxr-xr-x   102B 2014-11-18 11:08:46  man/
+    >   (1)->  drwxr-xr-x   136B 2014-11-18 11:08:46  man1/
+    >       (2)->  -rw-r--r--     2K 2014-11-18 11:08:46  lua.1
+    >       (2)->  -rw-r--r--     2K 2014-11-18 11:08:46  luac.1
+    > (0)->  drwxr-xr-x   102B 2014-11-18 11:08:46  share/
+    >   (1)->  drwxr-xr-x   102B 2014-11-18 11:08:46  lua/
+    >       (2)->  drwxr-xr-x    68B 2014-11-18 11:08:46  5.2/
